@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+
+def lineqn(m,x,c):
+    
+    return (m*x + c)
+
+randomX = []
+randomY = []
+
+for i in range(0,1000):
+    randomX.append(random.randint(0,1000))
+    
+for i in range(0,len(randomX)):
+    randomY.append(lineqn(0.1,randomX[i],2))
+    
+plt.plot(randomX,randomY)
+plt.show()
+
+
